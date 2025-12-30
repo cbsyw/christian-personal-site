@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Christian Warren</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' font-family='-apple-system, BlinkMacSystemFont, SF Pro Display, Segoe UI, sans-serif' font-weight='500'>C</text></svg>">
+    <style>
+        /* Auto dark/light theme based on device preference */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --text-secondary: #666666;
+            --link-color: #0066cc;
+            --link-hover: #0052a3;
+            --border-color: #e5e5e5;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #161616;
+                --text-color: #e5e5e5;
+                --text-secondary: #a0a0a0;
+                --link-color: #4d9fff;
+                --link-hover: #70b3ff;
+                --border-color: #2a2a2a;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        /* Header */
+        h1 {
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 48px;
+            letter-spacing: -0.02em;
+        }
+
+        /* Back link */
+        .back-link {
+            display: inline-block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 24px;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--text-color);
+        }
+
+        /* Content */
+        p {
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--link-hover);
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 48px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin-bottom: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">← home</a>
+        
+        <h1>about</h1>
+
+        <p>
+            I'm currently pursuing a Master's in Computer Science at Georgia Tech, 
+            building on my background in biology from Loyola University Maryland.
+        </p>
+
+        <p>
+            Currently, I worked as a Technical Project Manager at ThermoFisher Scientific, 
+            where I bridge the gap between scientific research and technology implementation.
+        </p>
+
+        <p>
+           I enjoy reading, cooking, golf, and woodworking in my free time! I'm always looking for something to fix or tinker with.
+        </p>
+
+        <p>
+            You can reach me at <a href="mailto:chriswarr45@gmail.com">chriswarr45@gmail.com</a> 
+            or connect with me on <a href="https://www.linkedin.com/in/warrenschris/" target="_blank">LinkedIn</a> 
+            and <a href="https://github.com/cbsyw" target="_blank">GitHub</a>.
+        </p>
+    </div>
+</body>
+</html>
